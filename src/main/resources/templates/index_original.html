@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1 th:text="${titulo}"></h1>
+
+    <div class="container-sm">
+        <p class="alert alert-success" role="alert" th:text="${hostname}"></p>
+        <p class="alert alert-success" role="alert" th:text="${ip}"></p>
+        <p class="alert alert-success" role="alert" th:text="${canonical}"></p>
+
+        <p class="alert alert-success" role="alert" th:text="${javaclasspath}"></p>
+        <p class="alert alert-success" role="alert" th:text="${file}"></p>
+        <p class="alert alert-success" role="alert" th:text="${javahome}"></p>
+        <p class="alert alert-success" role="alert" th:text="${javavendor}"></p>
+        <p class="alert alert-success" role="alert" th:text="${javavendorurl}"></p>
+        <p class="alert alert-success" role="alert" th:text="${javaversion}"></p>
+        <p class="alert alert-success" role="alert" th:text="${lineseparator}"></p>
+        <p class="alert alert-success" role="alert" th:text="${osarch}"></p>
+        <p class="alert alert-success" role="alert" th:text="${osname}"></p>
+        <p class="alert alert-success" role="alert" th:text="${osversion}"></p>
+        <p class="alert alert-success" role="alert" th:text="${pathseparator}"></p>
+        <p class="alert alert-success" role="alert" th:text="${userdir}"></p>
+        <p class="alert alert-success" role="alert" th:text="${userhome}"></p>
+        <p class="alert alert-success" role="alert" th:text="${username}"></p>
+
+        <p class="alert alert-success" role="alert" th:text="${hora}"></p>
+    </div>
+
+    <div class="container-sm">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Título</th>
+                <th scope="col">Valor</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${hostname}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${ip}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${canonical}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${hora}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${file}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${javahome}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${javavendor}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${javaversion}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${lineseparator}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${osarch}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${osname}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${osversion}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${pathseparator}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${userdir}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${userhome}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${username}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Nombre</th>
+                <td th:text="${javaclasspath}"></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <h1 th:text="${titulo}"></h1>
+
+    <div class="container-sm">
+        <table class="table table-hover">
+
+            <tbody>
+            <tr>
+                <th scope="row">Hostname</th>
+                <td th:text="${hostname}"></td>
+            </tr>
+            <tr>
+                <th scope="row">IP</th>
+                <td th:text="${ip}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Hostname canonical</th>
+                <td th:text="${canonical}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Hora host</th>
+                <td th:text="${hora}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">"/" -> UNIX o "\" -> Win</th>
+                <td th:text="${file}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Installation directory for Java Runtime Environment (JRE)</th>
+                <td th:text="${javahome}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">JRE vendor name</th>
+                <td th:text="${javavendor}"></td>
+            </tr>
+            <tr>
+                <th scope="row">JRE vendor URL</th>
+                <td th:text="${javavendorurl}"></td>
+            </tr>
+            <tr>
+                <th scope="row">JRE version number</th>
+                <td th:text="${javaversion}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Sequence used by operating system to separate lines in text files</th>
+                <td th:text="${lineseparator}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Operating system architecture</th>
+                <td th:text="${osarch}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Operating system name</th>
+                <td th:text="${osname}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Operating system version</th>
+                <td th:text="${osversion}"></td>
+            </tr>
+            <tr>
+                <th scope="row">Path separator character used in java.class.path</th>
+                <td th:text="${pathseparator}"></td>
+            </tr>
+            <tr>
+                <th scope="row">User working directory</th>
+                <td th:text="${userdir}"></td>
+            </tr>
+            <tr>
+                <th scope="row">User home directory</th>
+                <td th:text="${userhome}"></td>
+            </tr>
+            <tr>
+                <th scope="row">User account name</th>
+                <td th:text="${username}"></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Path used to find directories and JAR archives containing class files. Elements of the
+                    class path are separated by a platform-specific character specified in the path.separator property.
+                </th>
+                <td th:text="${javaclasspath}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+</script>
+</body>
+</html>
